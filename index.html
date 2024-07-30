@@ -23,30 +23,37 @@
   </head>
   <body>
     <div class="overlay"></div>
+    <!-- Header section -->
     <header>
+      <!-- Logo -->
       <img src="images/logo.svg" alt="logo" />
+
+      <!-- Navigation bar -->
       <nav class="navbar">
         <ul>
+          <!-- Features dropdown menu -->
           <li class="dropdown_container">
             <button class="dropbtn">Features</button>
             <div class="dropdown-content">
-              <a href="#"
-                ><img src="images/icon-todo.svg" alt="icon-todo" /> Todo List</a
-              >
-              <a href="#"
-                ><img src="images/icon-calendar.svg" alt="icon-todo" />
-                Calendar</a
-              >
-              <a href="#"
-                ><img src="images/icon-reminders.svg" alt="icon-todo" />
-                Reminders</a
-              >
-              <a href="#"
-                ><img src="images/icon-planning.svg" alt="icon-planning" />
-                Planning</a
-              >
+              <a href="#">
+                <img src="images/icon-todo.svg" alt="icon-todo" /> Todo List
+              </a>
+              <a href="#">
+                <img src="images/icon-calendar.svg" alt="icon-todo" />
+                Calendar
+              </a>
+              <a href="#">
+                <img src="images/icon-reminders.svg" alt="icon-todo" />
+                Reminders
+              </a>
+              <a href="#">
+                <img src="images/icon-planning.svg" alt="icon-planning" />
+                Planning
+              </a>
             </div>
           </li>
+
+          <!-- Company dropdown menu -->
           <li class="dropdown_container">
             <button class="dropbtn">Company</button>
             <div class="dropdown-content">
@@ -55,6 +62,8 @@
               <a href="#">Blog</a>
             </div>
           </li>
+
+          <!-- Other navigation links -->
           <li>
             <a href="#">Careers</a>
           </li>
@@ -62,33 +71,48 @@
             <a href="#">About</a>
           </li>
         </ul>
+
+        <!-- Login and Register buttons -->
         <div class="btns">
           <button class="login btn">Login</button>
           <button class="btn">Register</button>
         </div>
       </nav>
+
+      <!-- Toggle button for mobile menu -->
       <button class="toggleBtn">
         <img src="images/icon-menu.svg" alt="menu-icon" />
       </button>
     </header>
+
+    <!-- Main content section -->
     <main>
+      <!-- Hero text container -->
       <article class="hero-txt-container">
+        <!-- Hero heading -->
         <h1>
           Make <br />
           remote work
         </h1>
+        <!-- Hero paragraph -->
         <p>
           Get your team in sync, no matter your location Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
+        <!-- Learn more button -->
         <button class="btn learnbtn"><b>Learn more</b></button>
+
+        <!-- Client logos section -->
         <section class="client_container">
+          <!-- Client logos -->
           <img src="images/client-databiz.svg" alt="databiz" />
           <img src="images/client-audiophile.svg" alt="audiophile" />
           <img src="images/client-meet.svg" alt="meet" />
           <img src="images/client-maker.svg" alt="maker" />
         </section>
       </article>
+
+      <!-- Hero images (mobile and desktop) -->
       <img
         src="images/image-hero-mobile.png"
         alt="mobile-hero-img"
@@ -101,6 +125,7 @@
       />
     </main>
 
+    <!-- Script tag for JavaScript file -->
     <script src="index.js"></script>
   </body>
 </html>
