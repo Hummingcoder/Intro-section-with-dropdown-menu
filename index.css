@@ -21,9 +21,12 @@ body {
   position: relative;
   background: var(--almost-white);
 }
-header,
-main {
+header {
   max-width: 1440px;
+  margin: auto;
+}
+main {
+  max-width: 1240px;
   margin: auto;
 }
 .overlay {
@@ -78,6 +81,7 @@ nav {
   justify-content: start;
   transition: 0.3s linear;
   padding-top: 100px;
+  background: white;
 }
 nav.show {
   width: 70vw;
@@ -143,7 +147,6 @@ a img {
   justify-content: start;
   gap: 1rem;
   transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 0 20px var(--shadow-gray);
 }
 
 .btns {
@@ -189,11 +192,10 @@ a img {
 
 /* ---------------------------------- main */
 main {
-  min-height: (90px - 100vh);
   display: flex;
   height: 100%;
-
   flex-direction: column-reverse;
+  align-items: center;
 }
 
 .image-hero-pc {
@@ -217,10 +219,10 @@ br {
   justify-content: center;
   gap: 1rem;
   text-align: center;
-  padding: 2.4rem 0;
+  padding: 2.4rem 1rem;
 }
 .hero-txt-container h1 {
-  font-size: clamp(2rem, 10vw, 5rem);
+  font-size: clamp(1.8rem, 8vw, 4rem);
   font-weight: 700;
   line-height: 1;
 }
@@ -234,6 +236,7 @@ br {
   grid-template-columns: repeat(4, 1fr);
   place-content: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 .client_container img {
   align-self: center;
@@ -264,6 +267,7 @@ br {
     flex-direction: row;
     overflow: visible;
     justify-content: space-between;
+    background: transparent;
   }
   ul {
     height: 100%;
@@ -281,6 +285,7 @@ br {
     height: 0;
     background: white;
     border-radius: 10px;
+    box-shadow: 0 0 20px var(--shadow-gray);
   }
   ul li:nth-child(1) {
     padding-left: 3rem;
@@ -305,6 +310,7 @@ br {
     margin-left: 1rem;
     padding: 1.6rem;
   }
+
   ul li,
   .dropbtn {
     height: 100%;
@@ -324,31 +330,36 @@ br {
     object-fit: fill;
     display: block;
   }
-  .hero-txt-container {
-    text-align: left;
-    align-items: start;
-    justify-content: space-between;
-  }
   main {
-    justify-content: space-between;
     flex-direction: row;
-    max-width: 94vw;
-    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    max-height: 700px;
   }
+  .hero-txt-container {
+    height: 100%;
+    align-self: baseline;
+    text-align: left;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-top: 10%;
+  }
+
   br {
     display: block;
   }
 }
 
 @media (width > 900px) {
-  .image-hero-pc {
-    height: 100%;
-    width: fit-content;
-    max-width: fit-content;
-    object-fit: fill;
-    display: block;
+  .hero-txt-container h1 {
+    font-size: 5rem;
   }
-  main {
-    max-width: 80vw;
-  }
+}
+
+.rotate {
+  margin-left: 10px;
+  transition: 0.3s linear;
+}
+.dropdown_container.show .rotate {
+  rotate: 180deg;
 }

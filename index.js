@@ -2,16 +2,7 @@ const toggleBtn = document.querySelector(".toggleBtn");
 const nav = document.querySelector(".navbar");
 const overlay = document.querySelector(".overlay");
 const dropdown_container = document.querySelectorAll(".dropdown_container");
-
 dropdown_container.forEach((drop) => {
-  const dropBtn = drop.querySelector(".dropbtn");
-  console.log(dropBtn);
-  drop.addEventListener("mouseover", () => {
-    drop.classList.add("show");
-  });
-  drop.addEventListener("mouseleave", () => {
-    drop.classList.remove("show");
-  });
   drop.addEventListener("click", () => {
     drop.classList.toggle("show");
   });
@@ -28,5 +19,8 @@ toggleBtn.addEventListener("click", (e) => {
       overlay.style.opacity = "1";
     }, 300);
     nav.classList.remove("show");
+    dropdown_container.forEach((drop) => {
+      drop.classList.remove("show");
+    });
   }
 });
