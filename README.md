@@ -25,5 +25,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [click here](https://your-solution-url.com)
-- Live Site URL: [click here](https://your-live-site-url.com)
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-and-i-am-stupid-6gYKHRPa0O)
+- Live Site URL: [click here](https://hummingcoder.github.io/Intro-section-with-dropdown-menu/)
